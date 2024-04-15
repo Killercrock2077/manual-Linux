@@ -17,16 +17,30 @@
             <pre class="code">
                 <code>
                     -u, --unique                     muestra los archivos sin contenido duplicado
+
                     -h, --human-numeric-sort         compara números en formato humanamete entendible (p.ej:2K,100, 45M,...)
-                    -(opcion3), --(nombre completo)         (Descrioción de lo que hace la opcion3)
+
+                    -k, --key=POS1[,POS2]            Este parámetro permite especificar una o más posiciones de campo para realizar 
+                                                     la ordenación. Se puede utilizar para ordenar archivos basados en una columna 
+                                                     específica en lugar de la línea completa.
+
+                    -(opcion4), --(nombre completo)         (Descrioción de lo que hace la opcion3)
                 </code>
             </pre>
             <h2 class="section-heading">Ejemplos de uso:</h2>
             <pre class="code">
                 <code>
-                    sort ejemplo.txt       muestra ordenado alfaveticamente el contenido del archivo "ejemplo.txt"
-                    sort -u ejemplo.txt    muestra ordenado alfaveticamente el contenido agrupando y eliminando el contenido repetido del archivo "ejemolo.txt"
-                    sort -h ejemolo.txt    muestra ordenado numericamente en formato legible para el humano del archivo "ejemplo.txt"
+                    sort ejemplo.txt                muestra ordenado alfaveticamente el contenido del archivo "ejemplo.txt"
+
+                    sort -u ejemplo.txt             muestra ordenado alfaveticamente el contenido agrupando y eliminando el contenido repetido del archivo "ejemolo.txt"
+
+                    sort -h ejemolo.txt             muestra ordenado numericamente en formato legible para el humano del archivo "ejemplo.txt"
+
+                    sort -k 2,2 -n datos.csv        Este comando ordena el archivo CSV datos.csv numéricamente según los valores de la segunda 
+                                                    columna. La opción -k 2,2 especifica que solo se debe considerar la segunda columna para 
+                                                    la ordenación y -n indica que la ordenación debe ser numérica.
+
+                    (ejemplo de uso del comando con y sin las opciones)    (Breve explicación de lo que hace el ejemplo)
                 </code>
             </pre>
         </section>
