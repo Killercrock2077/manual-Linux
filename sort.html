@@ -24,6 +24,8 @@
                                                      la ordenación. Se puede utilizar para ordenar archivos basados en una columna 
                                                      específica en lugar de la línea completa.
 
+                    -r, --reverse                    Ordena de forma inversa los elementos ordenados de una lista.
+                    
                     -n, --numeric-sort               Ordena de manera númerica en vez de ordenar de manera alfabética. Interpreta cada línea 
                                                      del archivo de entrada como un número y ordena en función de estos valores numéricos en lugar 
                                                      de ordenar alfabéticamente.
@@ -45,11 +47,16 @@
                                                     columna. La opción -k 2,2 especifica que solo se debe considerar la segunda columna para 
                                                     la ordenación y -n indica que la ordenación debe ser numérica.
 
+                    sort -r lista.txt               Supongamos que tenemos un txt llamado lista que tiene nombre de personas ordenados de la 
+                                                    A a la Z. Con este comando, invertiríamos el orden de esta lista, ordenando de la Z 
+                                                    a la A. Si queremos que esta lista reordenada aparezca en un nuevo archivo, 
+                                                    utilizaríamos sort -r lista.txt > listaReordenada.txt y nos crearía la lista reordenada 
+                                                    en listaReordenada.txt
+                                                    
                     sort -n numeros.txt             Ordena los números en el archivo numeros.txt de manera numérica, en lugar de alfabética, 
                                                     produciendo una salida ordenada de menor a mayor.
 
                     (ejemplo de uso del comando con y sin las opciones)    (Breve explicación de lo que hace el ejemplo)
-
                 </code>
             </pre>
         </section>
