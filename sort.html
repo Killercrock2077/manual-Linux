@@ -24,7 +24,7 @@
                                                      la ordenación. Se puede utilizar para ordenar archivos basados en una columna 
                                                      específica en lugar de la línea completa.
 
-                    -(opcion4), --(nombre completo)         (Descrioción de lo que hace la opcion3)
+                    -r, --reverse                    Ordena de forma inversa los elementos ordenados de una lista.
                 </code>
             </pre>
             <h2 class="section-heading">Ejemplos de uso:</h2>
@@ -40,7 +40,11 @@
                                                     columna. La opción -k 2,2 especifica que solo se debe considerar la segunda columna para 
                                                     la ordenación y -n indica que la ordenación debe ser numérica.
 
-                    (ejemplo de uso del comando con y sin las opciones)    (Breve explicación de lo que hace el ejemplo)
+                    sort -r lista.txt               Supongamos que tenemos un txt llamado lista que tiene nombre de personas ordenados de la 
+                                                    A a la Z. Con este comando, invertiríamos el orden de esta lista, ordenando de la Z 
+                                                    a la A. Si queremos que esta lista reordenada aparezca en un nuevo archivo, 
+                                                    utilizaríamos sort -r lista.txt > listaReordenada.txt y nos crearía la lista reordenada 
+                                                    en listaReordenada.txt
                 </code>
             </pre>
         </section>
