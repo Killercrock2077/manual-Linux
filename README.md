@@ -1,4 +1,4 @@
-# manual de algunos comandos de linuz
+# manual de algunos comandos de linux
 
 Pequeño manual de varios comandos Linux con sus opciones y ejemplos de uso. 
 
